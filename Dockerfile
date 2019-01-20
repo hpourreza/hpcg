@@ -6,6 +6,8 @@ RUN chmod +x /usr/bin/compileRun.sh
 RUN wget --no-check-certificate https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.3.tar.gz
 RUN tar -xzf openmpi-2.1.3.tar.gz
 RUN cd openmpi-2.1.3
+RUN pwd
+RUN ls
 RUN ./configure
 RUN make
 RUN make install
