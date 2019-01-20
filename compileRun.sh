@@ -6,11 +6,12 @@
 #make
 #make install
 #cd ..
-#wget --no-check-certificate https://github.com/hpcg-benchmark/hpcg/archive/HPCG-release-3-0-branch.zip
-#unzip HPCG-release-3-0-branch.zip
-#cd hpcg-HPCG-release-3-0-branch
-#mkdir build
-#cd build
-#../configure Linux_MPI
-#make
+wget --no-check-certificate https://github.com/hpcg-benchmark/hpcg/archive/HPCG-release-3-0-branch.zip
+unzip HPCG-release-3-0-branch.zip
+cd hpcg-HPCG-release-3-0-branch
+mkdir build
+cd build
+../configure Linux_MPI
+make
+echo "$pwd"
 mpirun -np 16 ./bin/xhpcg #128 128 128 --rt=180
