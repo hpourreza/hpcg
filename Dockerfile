@@ -1,3 +1,3 @@
-FROM hpourreza/hcpg:latest
+FROM hpourreza/hpcg:latest
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd","-D"]
